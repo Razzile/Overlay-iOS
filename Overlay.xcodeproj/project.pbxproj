@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F23401B21B9C2E4B0058F9E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23401B11B9C2E4B0058F9E7 /* Foundation.framework */; };
+		F23401B41B9C2E4B0058F9E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23401B31B9C2E4B0058F9E7 /* UIKit.framework */; };
+		F23401BE1B9C2E4B0058F9E7 /* Overlay.h in Headers */ = {isa = PBXBuildFile; fileRef = F23401BD1B9C2E4B0058F9E7 /* Overlay.h */; };
+		F23401C01B9C2E4B0058F9E7 /* Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F23401BF1B9C2E4B0058F9E7 /* Overlay.m */; };
+		F23401CA1B9C30EC0058F9E7 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F23401C91B9C30EC0058F9E7 /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F23401AE1B9C2E4B0058F9E7 /* Overlay.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Overlay.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23401B11B9C2E4B0058F9E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F23401B31B9C2E4B0058F9E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F23401B81B9C2E4B0058F9E7 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		F23401B91B9C2E4B0058F9E7 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		F23401BB1B9C2E4B0058F9E7 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		F23401BC1B9C2E4B0058F9E7 /* Overlay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Overlay-Prefix.pch"; sourceTree = "<group>"; };
+		F23401BD1B9C2E4B0058F9E7 /* Overlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Overlay.h; sourceTree = "<group>"; };
+		F23401BF1B9C2E4B0058F9E7 /* Overlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overlay.m; sourceTree = "<group>"; };
+		F23401C31B9C2E4B0058F9E7 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+		F23401C91B9C30EC0058F9E7 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23401AA1B9C2E4B0058F9E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23401CA1B9C30EC0058F9E7 /* libsubstrate.dylib in Frameworks */,
+				F23401B21B9C2E4B0058F9E7 /* Foundation.framework in Frameworks */,
+				F23401B41B9C2E4B0058F9E7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F23401A41B9C2E4B0058F9E7 = {
+			isa = PBXGroup;
+			children = (
+				F23401B51B9C2E4B0058F9E7 /* Overlay */,
+				F23401B01B9C2E4B0058F9E7 /* Frameworks */,
+				F23401AF1B9C2E4B0058F9E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F23401AF1B9C2E4B0058F9E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23401AE1B9C2E4B0058F9E7 /* Overlay.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F23401B01B9C2E4B0058F9E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F23401C91B9C30EC0058F9E7 /* libsubstrate.dylib */,
+				F23401B11B9C2E4B0058F9E7 /* Foundation.framework */,
+				F23401B31B9C2E4B0058F9E7 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F23401B51B9C2E4B0058F9E7 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				F23401BD1B9C2E4B0058F9E7 /* Overlay.h */,
+				F23401BF1B9C2E4B0058F9E7 /* Overlay.m */,
+				F23401B61B9C2E4B0058F9E7 /* Package */,
+				F23401BA1B9C2E4B0058F9E7 /* Supporting Files */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		F23401B61B9C2E4B0058F9E7 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				F23401B71B9C2E4B0058F9E7 /* DEBIAN */,
+				F23401C11B9C2E4B0058F9E7 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		F23401B71B9C2E4B0058F9E7 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				F23401B81B9C2E4B0058F9E7 /* control.txt */,
+				F23401B91B9C2E4B0058F9E7 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		F23401BA1B9C2E4B0058F9E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F23401BB1B9C2E4B0058F9E7 /* PackageVersion.plist */,
+				F23401BC1B9C2E4B0058F9E7 /* Overlay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F23401C11B9C2E4B0058F9E7 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				F23401C21B9C2E4B0058F9E7 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		F23401C21B9C2E4B0058F9E7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F23401C31B9C2E4B0058F9E7 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F23401AB1B9C2E4B0058F9E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23401BE1B9C2E4B0058F9E7 /* Overlay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F23401AD1B9C2E4B0058F9E7 /* Overlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23401C61B9C2E4B0058F9E7 /* Build configuration list for PBXNativeTarget "Overlay" */;
+			buildPhases = (
+				F23401A91B9C2E4B0058F9E7 /* Sources */,
+				F23401AA1B9C2E4B0058F9E7 /* Frameworks */,
+				F23401AB1B9C2E4B0058F9E7 /* Headers */,
+				F23401AC1B9C2E4B0058F9E7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Overlay;
+			productName = Overlay;
+			productReference = F23401AE1B9C2E4B0058F9E7 /* Overlay.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23401A51B9C2E4B0058F9E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					F23401AD1B9C2E4B0058F9E7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = F23401A81B9C2E4B0058F9E7 /* Build configuration list for PBXProject "Overlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F23401A41B9C2E4B0058F9E7;
+			productRefGroup = F23401AF1B9C2E4B0058F9E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23401AD1B9C2E4B0058F9E7 /* Overlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F23401AC1B9C2E4B0058F9E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23401A91B9C2E4B0058F9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23401C01B9C2E4B0058F9E7 /* Overlay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F23401C41B9C2E4B0058F9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		F23401C51B9C2E4B0058F9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		F23401C71B9C2E4B0058F9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Overlay/Overlay-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.5;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		F23401C81B9C2E4B0058F9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Overlay/Overlay-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.5;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23401A81B9C2E4B0058F9E7 /* Build configuration list for PBXProject "Overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23401C41B9C2E4B0058F9E7 /* Debug */,
+				F23401C51B9C2E4B0058F9E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23401C61B9C2E4B0058F9E7 /* Build configuration list for PBXNativeTarget "Overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23401C71B9C2E4B0058F9E7 /* Debug */,
+				F23401C81B9C2E4B0058F9E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F23401A51B9C2E4B0058F9E7 /* Project object */;
+}
